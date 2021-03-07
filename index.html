@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt-2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style/p3-style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <div class="nav__logo">
+        <img
+          class="logo__image"
+          src="./style/pictures/Spotify_Logo_RGB_White.png"
+          alt="Spotify logo"
+        />
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="item__link" href="#">
+            <div class="item__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 6.453l9 8.375v9.172h-6v-6h-6v6h-6v-9.172l9-8.375zm12 5.695l-12-11.148-12 11.133 1.361 1.465 10.639-9.868 10.639 9.883 1.361-1.465z"
+                />
+              </svg>
+            </div>
+            <span class="item__text">Home</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="item__link" href="#">
+            <div class="item__logo">
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"
+                />
+              </svg>
+            </div>
+            <span class="item__text">Szukaj</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="item__link" href="#">
+            <div class="item__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 5v13.883l-1 .117v-16c-3.895.119-7.505.762-10.002 2.316-2.496-1.554-6.102-2.197-9.998-2.316v16l-1-.117v-13.883h-1v15h9.057c1.479 0 1.641 1 2.941 1 1.304 0 1.461-1 2.942-1h9.06v-15h-1zm-12 13.645c-1.946-.772-4.137-1.269-7-1.484v-12.051c2.352.197 4.996.675 7 1.922v11.613zm9-1.484c-2.863.215-5.054.712-7 1.484v-11.613c2.004-1.247 4.648-1.725 7-1.922v12.051z"
+                />
+              </svg>
+            </div>
+            <span class="item__text">Biblbioteka </span>
+          </a>
+        </li>
+      </ul>
+      <div class="nav__playlist">
+        <h1 class="nav__playlistTopic">Playlisty</h1>
+        <div class="nav__element">
+          <a href="#" class="playlist__link">
+            <div class="playlist__logo">
+              <img
+                class="playlist__image"
+                src="./style/pictures/plus.svg"
+                alt="plus"
+              />
+            </div>
+            <span class="playlist__text">Utwórz playlistę</span>
+          </a>
+        </div>
+        <div class="nav__element">
+          <a href="#" class="playlist__link">
+            <div class="playlist__logo">
+              <img class="playlist__image" src="style/pictures/heart.svg" "
+              alt=" heart">
+            </div>
+            <span class="playlist__text">Polubione utwory</span>
+          </a>
+        </div>
+        <div class="nav__line"></div>
+      </div>
+      <div>
+        <div class="bottomList">
+          <span class="bottom__item">Pliki cookie</span>
+          <span class="bottom__item">Prywatność</span>
+        </div>
+      </div>
+    </nav>
+    <div class="right__side">
+      <header class="header">
+        <div class="header__arrow1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+            />
+          </svg>
+        </div>
+        <div class="header__arrow2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+          </svg>
+        </div>
+        <div class="header__rejestry">Zarejestruj się</div>
+        <div class="header__login">Zaloguj się</div>
+      </header>
+      <main class="main__container">
+        <div class="container__rows">
+          <div class="row__heading">
+            <span href="#" class="row__title">New Music Friday!</span>
+            <div class="show__container">
+              <span href="#" class="row__show">POKAŻ WSZYSTKO</span>
+            </div>
+          </div>
+          <div class="row__list">
+            <div class="list__element">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/dziendobry.jpg" />
+                  <span class="picture__title">Dobry dzień</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Dobry dzień</h3>
+                  <span class="text__paragraph"
+                    >Twoje ulubione piosenki, te starsze i te nowsze.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/zimowychill.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Zimowy chill</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Zimowy chill</h3>
+                  <span class="text__paragraph">Rozgrzej się i odpocznij.</span>
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__three">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/pracawdomu.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Praca w domu</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Praca w domu</h3>
+                  <span class="text__paragraph"
+                    >Dla tych, którzy lubią pracować z muzyką</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__four">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/IMG_3485.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Jesienny power</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Jesienny power</h3>
+                  <span class="text__paragraph"
+                    >Energia z którą pokonasz depresję</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="list__element row__five">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/IMG_3508.jpg" />
+                  <span class="picture__title">Najpierw kawa</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Najpierw kawa</h3>
+                  <span class="text__paragraph"
+                    >spotkania? dedlajny? Kawa i papierosek!</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__six">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="https://picsum.photos/157/157" />
+                  <span class="picture__title">You're not stupid</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Jazz is stupid</h3>
+                  <span class="text__paragraph"
+                    >Just play the right notes!</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__seven">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/zwariowane.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Mood booster</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Mood booster</h3>
+                  <span class="text__paragraph"
+                    >muzyka która mówi Ci, że już piątek</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container__rows">
+          <div class="row__heading">
+            <span href="#" class="row__title">Ciekawe składanki!</span>
+            <div class="show__container">
+              <span href="#" class="row__show">POKAŻ WSZYSTKO</span>
+            </div>
+          </div>
+          <div class="row__list">
+            <div class="list__element">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/prysznic.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Pod prysznicem</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Pod prysznicem</h3>
+                  <span class="text__paragraph"
+                    >Zrób sobie prywatne Voice of Poland</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/usmienich.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Uśmiechnij się!</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Uśmiechnij się!</h3>
+                  <span class="text__paragraph"
+                    >Gdy już nic więcej Ci nie zostało</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__three">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/gotowanie.jpg" />
+                  <span class="picture__title">Gotowanie</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Gotowanie</h3>
+                  <span class="text__paragraph"
+                    >Gdy nie umiesz ani śpiewać ani gotować</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__four">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/trening.jpg" />
+                  <span class="picture__title">Trening w domu</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Trening w domu</h3>
+                  <span class="text__paragraph"
+                    >Gdy nie chcesz zawieść swojego trenera</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__five">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/zacisze.jpg" />
+                  <span class="picture__title">Zacisze</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Zacisze</h3>
+                  <span class="text__paragraph">Gdy introwertyzm wygra</span>
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__six">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/sprzatanie.jpg" />
+                  <span class="picture__title">Sprzątanie</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Sprzątanie</h3>
+                  <span class="text__paragraph"
+                    >Gdy potrzebujesz zespołu który wymiata</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__seven">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/yoga.jpg" />
+                  <span class="picture__title picture__titleDown">Yoga</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Yoga</h3>
+                  <span class="text__paragraph"
+                    >Gdy trening w domu to za dużo</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container__rows">
+          <div class="row__heading">
+            <span href="#" class="row__title">Hity lepsze od tych u góry</span>
+            <div class="show__container">
+              <span href="#" class="row__show">POKAŻ WSZYSTKO</span>
+            </div>
+          </div>
+          <div class="row__list">
+            <div class="list__element">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/polskiehity.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Polskie hity</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Polskie hity</h3>
+                  <span class="text__paragraph">zapętlona Rota</span>
+                </div>
+              </div>
+            </div>
+            <div class="list__element">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/happy.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Happy hits</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Happy hits</h3>
+                  <span class="text__paragraph"
+                    >Gdy chcesz być szczęśliwa po angielsku</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__three">
+              <div class="element">
+                <div class="element__picture">
+                  <img
+                    class="picture"
+                    src="./style/pictures/rapmotywator.jpg"
+                  />
+                  <span class="picture__title picture__titleDown"
+                    >Rap motywacja</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Rap motywacja</h3>
+                  <span class="text__paragraph"
+                    >Po corpo crossfit ale sercem na blokowisku</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__four">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/rapold.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Oldschool Rap</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Oldschool Rap</h3>
+                  <span class="text__paragraph"
+                    >Popek w rapie to dla Ciebie za dużo</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__five">
+              <div class="element">
+                <div class="element__picture">
+                  <img
+                    class="picture"
+                    src="./style/pictures/sylwestrowehity.jpg"
+                  />
+                  <span class="picture__title picture__titleDown"
+                    >Hity na sylwestra</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Hity na sylwestra</h3>
+                  <span class="text__paragraph">Sylwester z jedynką</span>
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__six">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/podcasty.jpg" />
+                  <span class="picture__title">Podcasty</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Podcasty</h3>
+                  <span class="text__paragraph"
+                    >Czyli słuchowiska z za oceanu</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__seven">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/zwariowane.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Nowa ja!</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Nowa ja!</h3>
+                  <span class="text__paragraph"
+                    >Gdy świąteczna dieta weszł za mocno</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container__rows">
+          <div class="row__heading">
+            <span href="#" class="row__title"
+              >Muzyka z ostatniego wiersza!</span
+            >
+            <div class="show__container">
+              <span href="#" class="row__show">POKAŻ WSZYSTKO</span>
+            </div>
+          </div>
+          <div class="row__list">
+            <div class="list__element">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/IMG_3485.jpg" />
+                  <span class="picture__title picture__titleDown"
+                    >Ktoś tu zagląda?</span
+                  >
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Ktoś tu zagląda?</h3>
+                  <span class="text__paragraph"
+                    >Pisze te tytuły ale nie wiem dla kogo :(</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="./style/pictures/swiateczne.jpg" />
+                  <span class="picture__title">Święta</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Święta</h3>
+                  <span class="text__paragraph">i po świętach</span>
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__three">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="https://picsum.photos/157/157" />
+                  <span class="picture__title">Hity lat 80</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Hity lat 80</h3>
+                  <span class="text__paragraph"
+                    >To wtedy jak afro i dzwony były modne</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__four">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="https://picsum.photos/157/157" />
+                  <span class="picture__title">Hity lat 90</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Hity lat 90</h3>
+                  <span class="text__paragraph">Madonna? chyba Madonna.</span>
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__five">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="https://picsum.photos/157/157" />
+                  <span class="picture__title">Hity lat 00</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Hity lat 00</h3>
+                  <span class="text__paragraph"
+                    >To wtedy jak świat się kończył 3 razy</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__six">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="https://picsum.photos/157/157" />
+                  <span class="picture__title">Hity lat 997</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Hity lat 997</h3>
+                  <span class="text__paragraph">ten numer to kłopoty</span>
+                </div>
+              </div>
+            </div>
+            <div class="list__element row__seven">
+              <div class="element">
+                <div class="element__picture">
+                  <img class="picture" src="https://picsum.photos/157/157" />
+                  <span class="picture__title">Hity lat 2010</span>
+                  <div class="picture__button">
+                    <svg
+                      class="button__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="element__text">
+                  <h3 class="text__title">Hity lat 2010</h3>
+                  <span class="text__paragraph">Który waściwie mamy rok?</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
